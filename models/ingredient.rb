@@ -24,6 +24,17 @@ class Ingredient
     @id = results.first()['id'].to_i
   end
 
+  def recipes()
+    sql = "SELECT rec.*
+    FROM recipes rec
+    INNER JOIN recipe_ingredients ing
+    ON ing.recipe_id = rec.id
+    WHERE ing.recipe_id = $1;"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.map { |recipe| Recipe.new(recipe) }
+  end
+
   def self.all()
     sql = "SELECT * FROM ingredients"
     results = SqlRunner.run(sql)
