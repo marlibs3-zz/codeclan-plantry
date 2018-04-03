@@ -8,9 +8,14 @@ body {
   margin: 0px;
 }
 
-h1 {
+.home p {
+  flex-direction: column;
+  text-align: center;
+}
+
+.home h1 {
   font-size: 1.8em;
-  color: darkred;
+  color: ;
   margin-bottom: 20px;
 }
 
