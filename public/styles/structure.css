@@ -14,12 +14,8 @@ body {
   text-align: center;
 }
 
-.home h1 {
-  font-size: 1.5em;
-  color: ;
-  margin-bottom: 20px;
-  flex-direction: column;
-  text-align: center;
+.home table {
+  flex: wrap;
 }
 
 a, a:link, a:visited {
