@@ -3,15 +3,9 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   color: #f3f1ea;
-  font-family: 'Abel';
+  font-family: 'Helvetica';
   padding: 0px;
   margin: 0px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Special Elite', cursive;
-  margin: 0px;
-  padding: 0px;
 }
 
 h1 {
@@ -21,12 +15,11 @@ h1 {
 }
 
 a, a:link, a:visited {
-  color: #a2937e;
-  text-decoration: none;
+  color: #ffbf80;
 }
 
 a:hover, a:active, a:focus {
-  color: #c6e2ff;
+  color: #587b41;
 }
 
 nav {
@@ -35,9 +28,12 @@ nav {
   padding-right: 25px;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 nav ul li {
   margin-bottom: 15px;
-  text-transform: uppercase;
 }
 
 ul {
