@@ -32,6 +32,21 @@ sweet_potato = Ingredient.new({
 })
 sweet_potato.save()
 
+pork = Ingredient.new({
+  "name" => "Pork"
+})
+pork.save()
+
+mushrooms = Ingredient.new({
+  "name" => "Mushrooms"
+})
+mushrooms.save()
+
+chorizo = Ingredient.new({
+  "name" => "Chorizo"
+})
+chorizo.save()
+
 soup = Recipe.new({
   "name" => "Roasted sweet potato & carrot soup",
   "vegetarian" => true,
@@ -43,7 +58,7 @@ soup = Recipe.new({
 })
 soup.save()
 
-jambalaya = Recipe.new({
+chicken_jambalaya = Recipe.new({
   "name" => "Chicken & chorizo jambalaya",
   "vegetarian" => false,
   "freezable" => true,
@@ -51,7 +66,18 @@ jambalaya = Recipe.new({
   "method" => "Heat the oil in a large frying pan with a lid and brown the chicken for 5-8 mins until golden. Remove and set aside. Tip in the onion and cook for 3-4 mins until soft. Then add the pepper, garlic, chorizo and Cajun seasoning, and cook for 5 mins more.
   Stir the chicken back in with the rice, add the tomatoes and stock. Cover and simmer for 20-25 mins until the rice is tender."
 })
-jambalaya.save()
+chicken_jambalaya.save()
+
+pork_pan_fry = Recipe.new({
+  "name" => "Pork pan-fry",
+  "vegetarian" => false,
+  "freezable" => true,
+  "difficulty" => "Easy",
+  "method" => "Coat the pork: Cut the pork diagonally into finger-thick slices. Tip the flour and rosemary into a large plastic food bag, add some salt and pepper and the pork, and toss until the meat is well coated.
+  Start cooking: Heat 2 tablespoons of the oil in a large wide frying pan. Add the pork and fry for about 3-4 minutes until nicely browned on both sides, turning once. Remove from the pan.
+  Fry the mushrooms: Heat the remaining oil in the pan, tip in the mushrooms and fry until they start to soften, about 2 minutes. Sprinkle in the garlic and return the pork to the pan with any flour left in the bag. Stir in the stock and bring to the boil. Simmer for 5 minutes or until the pork is cooked."
+})
+pork_pan_fry.save()
 
 recipe_ingredient1 = Recipe_Ingredient.new({
   "ingredient_id" => carrot.id,
@@ -70,6 +96,42 @@ recipe_ingredient3 = Recipe_Ingredient.new({
   "recipe_id" => soup.id
 })
 recipe_ingredient3.save()
+
+recipe_ingredient4 = Recipe_Ingredient.new({
+  "ingredient_id" => chicken.id,
+  "recipe_id" => chicken_jambalaya.id
+})
+recipe_ingredient4.save()
+
+recipe_ingredient5 = Recipe_Ingredient.new({
+  "ingredient_id" => chorizo.id,
+  "recipe_id" => chicken_jambalaya.id
+})
+recipe_ingredient5.save()
+
+recipe_ingredient6 = Recipe_Ingredient.new({
+  "ingredient_id" => rice.id,
+  "recipe_id" => chicken_jambalaya.id
+})
+recipe_ingredient6.save()
+
+recipe_ingredient7 = Recipe_Ingredient.new({
+  "ingredient_id" => pork.id,
+  "recipe_id" => pork_pan_fry.id
+})
+recipe_ingredient7.save()
+
+recipe_ingredient8 = Recipe_Ingredient.new({
+  "ingredient_id" => mushrooms.id,
+  "recipe_id" => pork_pan_fry.id
+})
+recipe_ingredient8.save()
+
+recipe_ingredient9 = Recipe_Ingredient.new({
+  "ingredient_id" => onion.id,
+  "recipe_id" => pork_pan_fry.id
+})
+recipe_ingredient9.save()
 
 # binding.pry
 # nil
