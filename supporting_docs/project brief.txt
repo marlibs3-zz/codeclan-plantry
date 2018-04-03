@@ -1,0 +1,21 @@
+Recipe Finder
+
+Plantry is designed to help you find cooking inspiration. It helps you find recipes that work for you by taking in what is in your fridge and cupboard, and suggesting recipes.
+
+MVP: 
+
+	- Create a table of ingredients
+	- Create a table of recipes
+	- Create a table of recipe ingredients to link them together
+	- Be able to click on an ingredient on the homepage and display recipes that match the ingredient
+	- You should be able to add a recipe
+	- The website should be nicely formatted
+
+Extensions:
+
+	- You should be able to search with multiple ingredients and be returned recipes that match all selected ingredients
+	- You should be able to filter recipes by veggie and freezable
+
+Advanced extensions:
+
+	- You should be able to sort recipes by the ones that require you to buy the least amount of ingredients
