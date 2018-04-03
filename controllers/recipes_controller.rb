@@ -7,7 +7,7 @@ get '/recipes' do
   erb ( :"recipes/index" )
 end
 
-get '/recipes' do
-  @recipes = Recipe.all()
+get '/recipes/:id' do
+  @recipes = Recipe.find(params['id'].to_i)
   erb ( :"recipes/index" )
 end
