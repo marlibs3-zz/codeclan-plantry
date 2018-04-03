@@ -1,11 +1,17 @@
-<img src="/images/logo.png">
+<div class="home">
 
-<body class="home">
+<p>Welcome to Plantry, your solution to leftovers. Plantry helps you find recipes that work for you by taking in what is in your fridge and cupboard, and suggesting recipes. </p>
 
-<p>Welcome to Plantry, your solution to leftovers.</p>
+<p>So, what's in your pantry?</p>
 
-<p>Plantry helps you find recipes that work for you by taking in what is in<br> your fridge and cupboard, and suggesting recipes. </p>
+<table>
+  <tr>
+    <td>|</td>
+  <% for ingredient in @ingredients %>
+    <td><a href="/ingredients/<%= ingredient.id %>"><%= ingredient.name %></a></td>
+    <td>|</td>
+  <% end %>
+  <tr>
+</table>
 
-<h1>So, what's in your pantry?</h1>
-
-</body>
+</div>

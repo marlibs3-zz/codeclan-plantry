@@ -1,9 +1,10 @@
 body {
   background: white url('/images/background.jpg');
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
   color: #f3f1ea;
-  font-family: 'Helvetica';
+  font-family: 'Padauk';
+  font-size: 1.3em;
   padding: 0px;
   margin: 0px;
 }
@@ -14,9 +15,11 @@ body {
 }
 
 .home h1 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: ;
   margin-bottom: 20px;
+  flex-direction: column;
+  text-align: center;
 }
 
 a, a:link, a:visited {

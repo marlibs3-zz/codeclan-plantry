@@ -71,7 +71,7 @@ chicken_jambalaya.save()
 pork_pan_fry = Recipe.new({
   "name" => "Pork pan-fry",
   "vegetarian" => false,
-  "freezable" => true,
+  "freezable" => false,
   "difficulty" => "Easy",
   "method" => "Coat the pork: Cut the pork diagonally into finger-thick slices. Tip the flour and rosemary into a large plastic food bag, add some salt and pepper and the pork, and toss until the meat is well coated.
   Start cooking: Heat 2 tablespoons of the oil in a large wide frying pan. Add the pork and fry for about 3-4 minutes until nicely browned on both sides, turning once. Remove from the pan.

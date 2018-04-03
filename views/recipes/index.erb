@@ -1,5 +1,3 @@
-<a href="/"><img src="/images/logo.png"></a>
-
 <table>
   <tr>
     <th>Name</th>
@@ -11,14 +9,14 @@
     <th>Freezable</th>
   </tr>
   <% for recipe in @recipes %>
-  <tr>
-    <td><a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a></td>
-    <td>|</td>
-    <td><%= recipe.difficulty %></td>
-    <td>|</td>
-    <td><%= recipe.vegetarian %></td>
-    <td>|</td>
-    <td><%= recipe.freezable %></td>
-  </tr>
+    <tr>
+      <td><a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a></td>
+      <td>|</td>
+      <td><%= recipe.difficulty %></td>
+      <td>|</td>
+      <td><%= (recipe.vegetarian) ? "Yes" : "No" %></td>
+      <td>|</td>
+      <td><%= (recipe.freezable) ? "Yes" : "No" %></td>
+    </tr>
   <% end %>
 </table>
