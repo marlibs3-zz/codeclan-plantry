@@ -16,7 +16,7 @@ end
 
 get '/recipes/ingredients/:id' do
   @ingredient = Ingredient.find(params['id'].to_i)
-  @title = @ingredient.name
+  @title = @ingredient.name.downcase
   @recipes = @ingredient.recipes()
   erb ( :"recipes/index")
 end

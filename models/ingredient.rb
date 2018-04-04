@@ -30,7 +30,7 @@ class Ingredient
     FROM recipes rec
     INNER JOIN recipe_ingredients ing
     ON ing.recipe_id = rec.id
-    WHERE ing.recipe_id = $1;"
+    WHERE ing.ingredient_id = $1;"
     values = [@id]
     results = SqlRunner.run(sql, values)
     return results.map { |recipe| Recipe.new(recipe) }
