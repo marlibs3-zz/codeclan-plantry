@@ -15,7 +15,8 @@ body {
 }
 
 .home table {
-  flex: wrap;
+  flex-direction: column;
+  text-align: center;
 }
 
 a, a:link, a:visited {
@@ -59,6 +60,19 @@ main {
 }
 
 #content {
+  display: flex;
+  flex-direction: column;
   border-left: 3px solid #f3f1ea;
   padding-left: 25px;
 }
+
+#ingredients-list {
+  margin: 0 auto;
+  width: 600px;
+}
+
+#ingredients-list li{
+  display: inline;
+}
+
+/*  Media Queries */

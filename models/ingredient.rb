@@ -24,6 +24,7 @@ class Ingredient
     @id = results.first()['id'].to_i
   end
 
+  # returns array of Recipe obj for this ingredient
   def recipes()
     sql = "SELECT rec.*
     FROM recipes rec

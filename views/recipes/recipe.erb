@@ -1,0 +1,22 @@
+<h3><%= @recipe.name %></h3>
+
+<table>
+  <tr>
+    <th>Difficulty</th>
+    <th></th>
+    <th>Vegetarian</th>
+    <th></th>
+    <th>Freezable</th>
+  </tr>
+  <tr>
+    <td><%= @recipe.difficulty %></td>
+    <td>|</td>
+    <td><%= @recipe.vegetarian == 't' ? "Yes" : "No" %></td>
+    <td>|</td>
+    <td><%= @recipe.freezable == 'f' ? "Yes" : "No" %></td>
+  </tr>
+</table>
+
+<p>
+    <%= @recipe.method %>
+</p>

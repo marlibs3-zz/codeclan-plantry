@@ -32,6 +32,7 @@ class Recipe
     @id = results.first()['id'].to_i
   end
 
+# return ingredients array for this recipe
   def ingredients()
     sql = "SELECT ing.*
     FROM ingredients ing
@@ -54,7 +55,7 @@ class Recipe
     WHERE id = $1"
     values = [id]
     results = SqlRunner.run(sql, values)
-    return Ingredient.new(results.first)
+    return Recipe.new(results.first)
   end
 
   def self.delete_all

@@ -1,3 +1,5 @@
+<h3><%= @title %></h3>
+
 <table>
   <tr>
     <th>Name</th>
@@ -14,9 +16,9 @@
       <td>|</td>
       <td><%= recipe.difficulty %></td>
       <td>|</td>
-      <td><%= (recipe.vegetarian) ? "Yes" : "No" %></td>
+      <td><%= recipe.vegetarian == 't' ? "Yes" : "No" %></td>
       <td>|</td>
-      <td><%= (recipe.freezable) ? "Yes" : "No" %></td>
+      <td><%= recipe.freezable == 'f' ? "Yes" : "No" %></td>
     </tr>
   <% end %>
 </table>

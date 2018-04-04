@@ -4,14 +4,10 @@
 
 <p>So, what's in your pantry?</p>
 
-<table>
-  <tr>
-    <td>|</td>
+<ul id="ingredients-list">
   <% for ingredient in @ingredients %>
-    <td><a href="/recipes/<%= recipe.id %>"><%= ingredient.name %></a></td>
-    <td>|</td>
+      <li><a href="/recipes/ingredients/<%= ingredient.id %>"><%= ingredient.name %></a></li>
   <% end %>
-  <tr>
-</table>
+</ul>
 
 </div>

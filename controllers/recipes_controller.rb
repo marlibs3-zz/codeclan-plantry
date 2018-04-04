@@ -1,13 +1,22 @@
 require("sinatra")
 require("sinatra/contrib/all")
 require_relative("../models/recipe.rb")
+require('pry')
 
 get '/recipes' do
+  @title = "Browse all our recipes..."
   @recipes = Recipe.all()
   erb ( :"recipes/index" )
 end
 
 get '/recipes/:id' do
-  @recipes = Recipe.find(params['id'].to_i)
-  erb ( :"recipes/index" )
+  @recipe = Recipe.find(params['id'].to_i)
+  erb ( :"recipes/recipe" )
+end
+
+get '/recipes/ingredients/:id' do
+  @ingredient = Ingredient.find(params['id'].to_i)
+  @title = @ingredient.name
+  @recipes = @ingredient.recipes()
+  erb ( :"recipes/index")
 end
