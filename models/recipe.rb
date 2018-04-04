@@ -3,11 +3,12 @@ require_relative("../db/sql_runner")
 class Recipe
 
   attr_reader :id
-  attr_accessor :name, :difficulty, :vegetarian, :freezable, :method
+  attr_accessor :name, :image, :difficulty, :vegetarian, :freezable, :method
 
   def initialize(options)
     @id = options['id'].to_i if options['id']
     @name = options['name']
+    @image = options['image']
     @difficulty = options['difficulty']
     @vegetarian = options['vegetarian']
     @freezable = options['freezable']
@@ -18,6 +19,7 @@ class Recipe
     sql = "INSERT INTO recipes
     (
       name,
+      image,
       difficulty,
       vegetarian,
       freezable,
@@ -25,10 +27,10 @@ class Recipe
     )
     VALUES
     (
-      $1, $2, $3, $4, $5
+      $1, $2, $3, $4, $5, $6
     )
     RETURNING id"
-    values = [@name, @difficulty, @vegetarian, @freezable, @method]
+    values = [@name, @image, @difficulty, @vegetarian, @freezable, @method]
     results = SqlRunner.run(sql, values)
     @id = results.first()['id'].to_i
   end

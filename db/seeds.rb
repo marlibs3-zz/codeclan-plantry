@@ -75,6 +75,7 @@ peas.save()
 
 soup = Recipe.new({
   "name" => "Roasted sweet potato & carrot soup",
+  "image" => "http://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/user-collections/my-colelction-image/2015/12/roasted-sweet-potato-carrot-soup.jpg?itok=l_XQY-PR",
   "vegetarian" => true,
   "freezable" => true,
   "difficulty" => "Medium",
@@ -86,6 +87,7 @@ soup.save()
 
 chicken_jambalaya = Recipe.new({
   "name" => "Chicken & chorizo jambalaya",
+  "image" => "http://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/user-collections/my-colelction-image/2015/12/recipe-image-legacy-id--1274503_8.jpg?itok=y2r-R0BV",
   "vegetarian" => false,
   "freezable" => true,
   "difficulty" => "Easy",
@@ -96,6 +98,7 @@ chicken_jambalaya.save()
 
 pork_pan_fry = Recipe.new({
   "name" => "Pork pan-fry",
+  "image" => "http://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--4491_12.jpg?itok=rxoin0l7",
   "vegetarian" => false,
   "freezable" => false,
   "difficulty" => "Easy",

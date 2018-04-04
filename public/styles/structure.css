@@ -1,3 +1,5 @@
+/* Main CSS */
+
 body {
   background: white url('/images/background.jpg');
   background-repeat: no-repeat;
@@ -8,26 +10,6 @@ body {
   padding: 0px;
   margin: 0px;
 }
-/*
-textarea {
-  display: inline;
-  resize: none;
-  width: 50%
-}
-
-.inline {
-  display: inline;
-} */
-
-.home p {
-  flex-direction: column;
-  text-align: center;
-}
-
-.home table {
-  flex-direction: column;
-  text-align: center;
-}
 
 a, a:link, a:visited {
   color: #ffbf80;
@@ -37,10 +19,59 @@ a:hover, a:active, a:focus {
   color: #587b41;
 }
 
+/* CSS by ID */
+
 nav {
+  border-right: 3px solid #f3f1ea;
   padding: 0px;
   margin: 0px;
   padding-right: 25px;
+  /* width: 500px */
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+#ingredients-list {
+  margin: 0 auto;
+  width: 500px;
+}
+
+#ingredients-list li{
+  display: inline;
+}
+
+/* Flex syntax */
+
+.flex {
+  display: flex;
+}
+
+.flex--row {
+  flex-direction: row;
+}
+
+/* textarea {
+  display: inline;
+  resize: none;
+  width: 50%
+}
+
+.inline {
+  display: inline;
+}
+
+.home p {
+  flex-direction: column;
+  text-align: center;
+}
+
+.home table {
+  flex-direction: column;
+  text-align: center;
 }
 
 nav a {
@@ -59,31 +90,9 @@ ul {
 
 main {
   padding: 20px;
-}
+} */
 
-.flex {
-  display: flex;
-}
-
-.flex--row {
-  flex-direction: row;
-}
-
-#content {
-  display: flex;
-  flex-direction: column;
-  border-left: 3px solid #f3f1ea;
-  padding-left: 25px;
-}
-
-#ingredients-list {
-  margin: 0 auto;
-  width: 600px;
-}
-
-#ingredients-list li{
-  display: inline;
-}
+/*
 
 .form-el {
   margin: 10px 0;
@@ -99,6 +108,6 @@ main {
   vertical-align: middle;
   width: 160px;
   margin: 0 1em 0 0;
-}
+} */
 
 /*  Media Queries */

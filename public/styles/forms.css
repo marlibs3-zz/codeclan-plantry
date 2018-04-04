@@ -1,5 +1,10 @@
-input[type="submit"] {
-  text-transform: uppercase;
+/* input[type="submit"] {
+  text-transform: lowercase;
+  font-family: 'Special Elite', cursive;
+}
+
+input[type="reset"] {
+  text-transform: lowercase;
   font-family: 'Special Elite', cursive;
 }
 
@@ -18,4 +23,4 @@ select {
 :focus {
   outline-color: transparent;
   outline-style: none;
-}
+} */

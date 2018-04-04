@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th></th>
     <th>Name</th>
     <th>Difficulty</th>
     <th>Vegetarian</th>
@@ -9,6 +10,7 @@
   </tr>
   <% for recipe in @recipes %>
     <tr>
+      <td><img src="<%= recipe.image %>"></td>
       <td><a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a></td>
       <td><%= recipe.difficulty %></td>
       <td><%= recipe.vegetarian == 't' ? "Yes" : "No" %></td>

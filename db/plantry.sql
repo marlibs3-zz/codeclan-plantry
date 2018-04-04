@@ -13,6 +13,7 @@ CREATE TABLE recipes
 (
   id SERIAL8 PRIMARY KEY,
   name VARCHAR(255),
+  image VARCHAR,
   difficulty VARCHAR(255),
   vegetarian BOOLEAN,
   freezable BOOLEAN,
