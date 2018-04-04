@@ -1,5 +1,11 @@
 <h3><%= @recipe.name %></h3>
-
+<p>
+  Core ingredients:
+  <% for ingredient in @ingredients %>
+      <li><a href="/recipes/ingredients/<%= ingredient.id %>"><%= ingredient.name %></a></li>
+  <% end %>
+</p>
+<hr>
 <table>
   <tr>
     <th>Difficulty</th>

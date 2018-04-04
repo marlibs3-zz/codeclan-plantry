@@ -2,7 +2,7 @@ require_relative("../db/sql_runner")
 
 class Recipe_Ingredient
 
-  attr_reader :id, :ingredient_id, :recipe_id
+  attr_accessor :id, :ingredient_id, :recipe_id
 
   def initialize(options)
     @id = options['id'].to_i if options['id']

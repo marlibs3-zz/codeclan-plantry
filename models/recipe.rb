@@ -2,8 +2,8 @@ require_relative("../db/sql_runner")
 
 class Recipe
 
-  attr_accessor :name, :difficulty, :vegetarian, :freezable, :method
   attr_reader :id
+  attr_accessor :name, :difficulty, :vegetarian, :freezable, :method
 
   def initialize(options)
     @id = options['id'].to_i if options['id']
@@ -39,7 +39,7 @@ class Recipe
     FROM ingredients ing
     INNER JOIN recipe_ingredients rec
     ON rec.ingredient_id = ing.id
-    WHERE rec.ingredient_id = $1;"
+    WHERE rec.recipe_id = $1;"
     values = [@id]
     results = SqlRunner.run(sql, values)
     return results.map { |ingredient| Ingredient.new(ingredient) }
@@ -62,6 +62,17 @@ class Recipe
   def self.delete_all
     sql = "DELETE FROM recipes"
     SqlRunner.run( sql )
+  end
+
+  def add_ingredients_by_id(array_of_ingredient_ids)
+    for ingredient_id in array_of_ingredient_ids
+      new_relationship_hash = {
+        "ingredient_id" => ingredient_id,
+        "recipe_id" => @id
+      }
+      Recipe_Ingredient.new(new_relationship_hash).save()
+    end
+
   end
 
 end

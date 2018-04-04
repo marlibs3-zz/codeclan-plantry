@@ -1,6 +1,7 @@
 require("sinatra")
 require("sinatra/contrib/all")
 require_relative("../models/recipe.rb")
+require_relative("../models/ingredient.rb")
 require('pry')
 
 get '/recipes' do
@@ -16,6 +17,7 @@ end
 
 get '/recipes/:id' do
   @recipe = Recipe.find(params['id'].to_i)
+  @ingredients = @recipe.ingredients
   erb ( :"recipes/recipe" )
 end
 
@@ -27,6 +29,8 @@ get '/recipes/ingredients/:id' do
 end
 
 post '/recipes' do
-  Recipe.new(params).save
+  recipe = Recipe.new(params)
+  recipe.save()
+  recipe.add_ingredients_by_id( params['ingredient_array'] )
   redirect to '/recipes'
 end
