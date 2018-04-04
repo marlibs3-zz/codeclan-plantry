@@ -8,6 +8,16 @@ body {
   padding: 0px;
   margin: 0px;
 }
+/*
+textarea {
+  display: inline;
+  resize: none;
+  width: 50%
+}
+
+.inline {
+  display: inline;
+} */
 
 .home p {
   flex-direction: column;
@@ -48,7 +58,7 @@ ul {
 }
 
 main {
-  padding: 25px;
+  padding: 20px;
 }
 
 .flex {
@@ -73,6 +83,22 @@ main {
 
 #ingredients-list li{
   display: inline;
+}
+
+.form-el {
+  margin: 10px 0;
+}
+
+.form-wrapper .form-el input[type="submit" i] {
+  margin-left: 180px;
+}
+
+.form-wrapper .form-el label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 160px;
+  margin: 0 1em 0 0;
 }
 
 /*  Media Queries */

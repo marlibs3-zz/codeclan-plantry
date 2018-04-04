@@ -1,0 +1,42 @@
+<h3>Here you can add your own recipe:</h3>
+<form id="new_recipe" method="POST" action="/recipes">
+  <div class="form-wrapper">
+
+    <div class="form-el">
+      <label for="name">Recipe name:</label>
+      <input type="text" name="name" id="name"/>
+    </div>
+
+    <div class="form-el">
+      <label for="difficulty">Difficulty:</label>
+      <input type="text" name="difficulty" id="difficulty"/>
+    </div>
+
+    <div class="form-el">
+      <label for="vegetarian">Vegetarian:</label>
+      <input type="checkbox" name="vegetarian" id="vegetarian"/>
+    </div>
+
+    <div class="form-el">
+      <label for="freezable">Freezable:</label>
+      <input type="checkbox" name="freezable" id="freezable"/>
+    </div>
+
+    <div class="form-el">
+      <label for="method">Method:</label>
+      <textarea rows="8" cols="50" name="method" form="new_recipe"></textarea>
+    </div>
+
+    <div>
+      <label for="ingredients">Ingredients:</label>
+      <% for ingredient in @ingredients %>
+        <input type="checkbox" name="ingredient_array[]" value="<%=ingredient.id%>"> <%=ingredient.name %>
+      <%end%>
+    </div>
+
+    <div class="form-el">
+      <input type="submit" value="Save"/>
+    </div>
+
+  </div>
+</form>

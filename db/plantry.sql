@@ -13,9 +13,9 @@ CREATE TABLE recipes
 (
   id SERIAL8 PRIMARY KEY,
   name VARCHAR(255),
+  difficulty VARCHAR(255),
   vegetarian BOOLEAN,
   freezable BOOLEAN,
-  difficulty VARCHAR(255),
   method VARCHAR
 );
 

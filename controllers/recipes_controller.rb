@@ -4,9 +4,14 @@ require_relative("../models/recipe.rb")
 require('pry')
 
 get '/recipes' do
-  @title = "Browse all our recipes..."
+  @title = "food"
   @recipes = Recipe.all()
   erb ( :"recipes/index" )
+end
+
+get '/recipes/new' do
+  @ingredients = Ingredient.all()
+  erb(:"recipes/new")
 end
 
 get '/recipes/:id' do
@@ -19,4 +24,9 @@ get '/recipes/ingredients/:id' do
   @title = @ingredient.plural_name.downcase
   @recipes = @ingredient.recipes()
   erb ( :"recipes/index")
+end
+
+post '/recipes' do
+  Recipe.new(params).save
+  redirect to '/recipes'
 end

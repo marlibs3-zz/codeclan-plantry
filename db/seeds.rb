@@ -55,6 +55,24 @@ chorizo = Ingredient.new({
 })
 chorizo.save()
 
+lentils = Ingredient.new({
+  "name" => "Lentils",
+  "plural_name" => "Lentils"
+})
+lentils.save()
+
+coconut_milk = Ingredient.new({
+  "name" => "Coconut milk",
+  "plural_name" => "Coconut milk"
+})
+coconut_milk.save()
+
+peas = Ingredient.new({
+  "name" => "Peas",
+  "plural_name" => "Peas"
+})
+peas.save()
+
 soup = Recipe.new({
   "name" => "Roasted sweet potato & carrot soup",
   "vegetarian" => true,
