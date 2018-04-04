@@ -1,49 +1,57 @@
 require_relative("../models/ingredient.rb")
 require_relative("../models/recipe.rb")
 require_relative("../models/recipe_ingredient.rb")
-# require("pry-byebug")
+require("pry-byebug")
 
 Recipe_Ingredient.delete_all()
 Ingredient.delete_all()
 Recipe.delete_all()
 
 carrot = Ingredient.new({
-  "name" => "Carrot"
+  "name" => "Carrot",
+  "plural_name" => "Carrots"
 })
 carrot.save()
 
 chicken = Ingredient.new({
-  "name" => "Chicken"
+  "name" => "Chicken",
+  "plural_name" => "Chicken"
 })
 chicken.save()
 
 onion = Ingredient.new({
-  "name" => "Onion"
+  "name" => "Onion",
+  "plural_name" => "Onions"
 })
 onion.save()
 
 rice = Ingredient.new({
-  "name" => "Rice"
+  "name" => "Rice",
+  "plural_name" => "Rice"
 })
 rice.save()
 
 sweet_potato = Ingredient.new({
-  "name" => "Sweet potato"
+  "name" => "Sweet potato",
+  "plural_name" => "Sweet potatoes"
 })
 sweet_potato.save()
 
 pork = Ingredient.new({
-  "name" => "Pork"
+  "name" => "Pork",
+  "plural_name" => "Pork"
 })
 pork.save()
 
 mushrooms = Ingredient.new({
-  "name" => "Mushrooms"
+  "name" => "Mushrooms",
+  "plural_name" => "Mushrooms"
 })
 mushrooms.save()
 
 chorizo = Ingredient.new({
-  "name" => "Chorizo"
+  "name" => "Chorizo",
+  "plural_name" => "Chorizo"
 })
 chorizo.save()
 
@@ -132,6 +140,3 @@ recipe_ingredient9 = Recipe_Ingredient.new({
   "recipe_id" => pork_pan_fry.id
 })
 recipe_ingredient9.save()
-
-# binding.pry
-# nil

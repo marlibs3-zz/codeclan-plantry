@@ -5,7 +5,8 @@ DROP TABLE IF EXISTS recipes;
 CREATE TABLE ingredients
 (
   id SERIAL8 PRIMARY KEY,
-  name VARCHAR(255)
+  name VARCHAR(255),
+  plural_name VARCHAR(255)
 );
 
 CREATE TABLE recipes
