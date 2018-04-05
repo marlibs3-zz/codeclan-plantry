@@ -3,12 +3,20 @@
 body {
   background: white url('/images/background.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   color: #f3f1ea;
   font-family: 'Padauk';
   font-size: 1.3em;
   padding: 0px;
   margin: 0px;
+}
+
+nav {
+  border-right: 3px solid #f3f1ea;
+  padding: 0px;
+  margin: 0px;
+  padding-right: 25px;
+  min-width: 175px
 }
 
 a, a:link, a:visited {
@@ -19,15 +27,19 @@ a:hover, a:active, a:focus {
   color: #587b41;
 }
 
-/* CSS by ID */
-
-nav {
-  border-right: 3px solid #f3f1ea;
-  padding: 0px;
-  margin: 0px;
-  padding-right: 25px;
-  /* width: 500px */
+ul {
+  list-style-type: none;
 }
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+/* CSS by ID */
 
 #content {
   display: flex;
@@ -50,9 +62,9 @@ nav {
   display: flex;
 }
 
-.flex--row {
+/* .flex--row {
   flex-direction: row;
-}
+} */
 
 /* textarea {
   display: inline;
@@ -74,40 +86,8 @@ nav {
   text-align: center;
 }
 
-nav a {
-  text-decoration: none;
-}
-
-nav ul li {
-  margin-bottom: 15px;
-}
-
-ul {
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-}
-
 main {
   padding: 20px;
-} */
-
-/*
-
-.form-el {
-  margin: 10px 0;
-}
-
-.form-wrapper .form-el input[type="submit" i] {
-  margin-left: 180px;
-}
-
-.form-wrapper .form-el label {
-  text-align: right;
-  display: inline-block;
-  vertical-align: middle;
-  width: 160px;
-  margin: 0 1em 0 0;
 } */
 
 /*  Media Queries */

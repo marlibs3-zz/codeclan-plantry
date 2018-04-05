@@ -1,26 +1,17 @@
-/* input[type="submit"] {
-  text-transform: lowercase;
-  font-family: 'Special Elite', cursive;
+/* Form  */
+
+.form-el {
+  margin: 10px 0;
 }
 
-input[type="reset"] {
-  text-transform: lowercase;
-  font-family: 'Special Elite', cursive;
+.form-wrapper .form-el input[type="submit" i] {
+  margin-left: 180px;
 }
 
-select {
- width: 150px;
- padding: 5px 35px 5px 5px;
- margin: 15px 0;
- font-size: 0.8em;
- -webkit-appearance: none;
- background: url('/images/hazard.png') 96% / 15% no-repeat papayawhip;
- font-family: 'Merriweather', serif;
- border: 1px solid #eee;
- display: block;
+.form-wrapper .form-el label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 160px;
+  margin: 0 1em 0 0;
 }
-
-:focus {
-  outline-color: transparent;
-  outline-style: none;
-} */
