@@ -23,11 +23,6 @@ nav {
   text-align: center;
 }
 
-.home table {
-  flex-direction: column;
-  text-align: center;
-}
-
 a, a:link, a:visited {
   color: #51661A;
 }
@@ -63,7 +58,7 @@ main {
 #content {
   display: flex;
   flex-direction: column;
-  padding-left: 25px;
+  width: 45em;
 }
 
 #content img {
