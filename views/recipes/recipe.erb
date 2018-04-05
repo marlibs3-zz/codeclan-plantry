@@ -1,25 +1,21 @@
 <h3><%= @recipe.name %></h3>
-<img src="<%= @recipe.image %>">
-<p>
-  Core ingredients:
-  <% for ingredient in @ingredients %>
-      <li><a href="/recipes/ingredients/<%= ingredient.id %>"><%= ingredient.name %></a></li>
-  <% end %>
-</p>
-<hr>
-<table>
+<table class="single-recipe">
   <tr>
-    <th>Difficulty</th>
-    <th>Vegetarian</th>
-    <th>Freezable</th>
+    <td><img src="<%= @recipe.image %>">
+    </td>
+    <td colspan="2">Aside from the staples, you will need:
+      <% for ingredient in @ingredients %>
+      <li><a href="/recipes/ingredients/<%= ingredient.id %>"><%= ingredient.name %></a></li>
+      <% end %>
+    </td>
   </tr>
   <tr>
-    <td><%= @recipe.difficulty %></td>
-    <td><%= @recipe.vegetarian == 't' ? "Yes" : "No" %></td>
-    <td><%= @recipe.freezable == 'f' ? "Yes" : "No" %></td>
+    <td>Difficulty: <%= @recipe.difficulty %></td>
+    <td>Vegetarian: <%= @recipe.vegetarian == 't' ? "Yes" : "No" %></td>
+    <td>Freezable: <%= @recipe.freezable == 'f' ? "Yes" : "No" %></td>
   </tr>
 </table>
 
 <p>
-    <%= @recipe.method %>
+  <%= @recipe.method %>
 </p>

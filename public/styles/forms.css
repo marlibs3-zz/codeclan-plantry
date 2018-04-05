@@ -2,7 +2,11 @@
 
 .form-wrapper {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+}
+
+.form-el * {
+    vertical-align: middle;
 }
 
 .form-el {

@@ -1,0 +1,23 @@
+/* View for one recipe */
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  text-align: justify;
+  padding: 10px;
+  border-width: 1px 0;
+  border-color: #35362f;
+  border-style: solid;
+}
+
+.single-recipe img {
+  height: 200px;
+}

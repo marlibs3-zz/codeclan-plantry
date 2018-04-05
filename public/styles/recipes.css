@@ -1,0 +1,22 @@
+/* List of recipe results */
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  border-width: 1px 0;
+  border-color: #35362f;
+  border-style: solid;
+}
+
+.table-list img {
+  width: 150px;
+}
