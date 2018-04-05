@@ -16,9 +16,6 @@ p {
 }
 
 nav {
-  border-right: 3px solid #f3f1ea;
-  padding: 0px;
-  margin: 0px;
   padding-right: 25px;
   min-width: 175px
 }
@@ -90,6 +87,11 @@ ul {
 #ingredient-selector {
   margin: 0 auto;
   display: inline;
+}
+
+#logo {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Flex syntax */

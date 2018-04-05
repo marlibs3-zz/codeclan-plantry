@@ -1,5 +1,10 @@
 /* Form  */
 
+.form-wrapper {
+  display: flex;
+  flex-direction: column; 
+}
+
 .form-el {
   margin: 10px 0;
 }

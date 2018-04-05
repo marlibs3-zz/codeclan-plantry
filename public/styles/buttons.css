@@ -8,5 +8,6 @@
   padding: 6px 6px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  width: 10vw;
+  align-self: center;
 }
