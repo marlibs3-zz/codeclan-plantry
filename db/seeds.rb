@@ -55,24 +55,6 @@ chorizo = Ingredient.new({
 })
 chorizo.save()
 
-lentils = Ingredient.new({
-  "name" => "Lentils",
-  "plural_name" => "Lentils"
-})
-lentils.save()
-
-coconut_milk = Ingredient.new({
-  "name" => "Coconut milk",
-  "plural_name" => "Coconut milk"
-})
-coconut_milk.save()
-
-peas = Ingredient.new({
-  "name" => "Peas",
-  "plural_name" => "Peas"
-})
-peas.save()
-
 soup = Recipe.new({
   "name" => "Roasted sweet potato & carrot soup",
   "image" => "http://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/user-collections/my-colelction-image/2015/12/roasted-sweet-potato-carrot-soup.jpg?itok=l_XQY-PR",

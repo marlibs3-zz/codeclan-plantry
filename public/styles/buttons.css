@@ -1,0 +1,12 @@
+.button {
+  background-color: #A5DFA7; /* Green */
+  border-radius: 25px;
+  border: none;
+  color: #35362f;
+  font-family: 'Padauk';
+  font-size: 1em;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}

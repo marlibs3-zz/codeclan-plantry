@@ -2,9 +2,8 @@
 
 body {
   background: white url('/images/background.jpg');
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  color: #f3f1ea;
+  background-size: 100%;
+  color: #35362f;
   font-family: 'Padauk';
   font-size: 1.3em;
   padding: 0px;
@@ -19,12 +18,22 @@ nav {
   min-width: 175px
 }
 
+.home p {
+  flex-direction: column;
+  text-align: center;
+}
+
+.home table {
+  flex-direction: column;
+  text-align: center;
+}
+
 a, a:link, a:visited {
-  color: #ffbf80;
+  color: #51661A;
 }
 
 a:hover, a:active, a:focus {
-  color: #587b41;
+  color: #8B8F65;
 }
 
 ul {
@@ -39,12 +48,26 @@ nav ul li {
   margin-bottom: 10px;
 }
 
+textarea {
+  display: inline;
+  resize: none;
+  width: 50%
+}
+
+main {
+  padding: 15px;
+}
+
 /* CSS by ID */
 
 #content {
   display: flex;
   flex-direction: column;
   padding-left: 25px;
+}
+
+#content img {
+  width: 200px
 }
 
 #ingredients-list {
@@ -56,38 +79,20 @@ nav ul li {
   display: inline;
 }
 
+#ingredient-selector {
+  margin: 0 auto;
+  display: inline;
+}
+
 /* Flex syntax */
 
 .flex {
   display: flex;
 }
 
-/* .flex--row {
+.flex--row {
   flex-direction: row;
 } */
 
-/* textarea {
-  display: inline;
-  resize: none;
-  width: 50%
-}
-
-.inline {
-  display: inline;
-}
-
-.home p {
-  flex-direction: column;
-  text-align: center;
-}
-
-.home table {
-  flex-direction: column;
-  text-align: center;
-}
-
-main {
-  padding: 20px;
-} */
 
 /*  Media Queries */

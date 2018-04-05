@@ -13,6 +13,13 @@
     </div>
 
     <div class="form-el">
+      <label for="ingredients">Ingredients:</label>
+      <% for ingredient in @ingredients %>
+        <input type="checkbox" name="ingredient_array[]" value="<%=ingredient.id%>" id="ingredient-selector"> <%=ingredient.name %>
+      <%end%>
+    </div>
+
+    <div class="form-el">
       <label for="difficulty">Difficulty:</label>
       <input type="text" name="difficulty" id="difficulty"/>
     </div>
@@ -32,19 +39,8 @@
       <textarea rows="8" cols="50" name="method" form="new_recipe"></textarea>
     </div>
 
-    <div>
-      <label for="ingredients">Ingredients:</label>
-      <% for ingredient in @ingredients %>
-        <input type="checkbox" name="ingredient_array[]" value="<%=ingredient.id%>"> <%=ingredient.name %>
-      <%end%>
-    </div>
-
-    <div class="form-el">
-      <input type="submit" value="Submit"/>
-    </div>
-
-    <div class="form-el">
-          <input type="reset">
+    <div class="button">
+      <input type="button" class="button" value="Submit">
     </div>
 
   </div>
