@@ -18,6 +18,7 @@ It must NOT use:
 - Any Object Relational Mapper (e.g. ActiveRecord)
 - JavaScript. At all. Don't even think about it
 - Authentication
+
 This project was to be completed in 4 days. I outlined my MVP and extensions in my trello board for this project at https://trello.com/b/GTS4zCY7/plantry
 
 ## Development
