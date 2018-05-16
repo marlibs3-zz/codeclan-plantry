@@ -3,7 +3,7 @@
 This was the Ruby project for the CodeClan programming course. I chose to make a website which can help you find cooking inspiration by taking in what is in your fridge and cupboard, and suggesting recipes. The look of the website is clean and simple; I wanted it to be very intuitive.  
 
 ## See it in action
-See it on my website at http://plantry.martabeveridge.uk
+See it on my website at http://plantry.martabeveridge.uk.
 
 ## Specification
 As this was a CodeClan project, I had to abide by the following rules:
