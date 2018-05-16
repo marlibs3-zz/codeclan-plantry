@@ -12,6 +12,7 @@ The project must be built using only:
 - PostGRES SQL
 - HTML / CSS
 - Ruby
+
 It must NOT use:
 - Any Object Relational Mapper (e.g. ActiveRecord)
 - JavaScript. At all. Don't even think about it
