@@ -19,7 +19,7 @@ It must NOT use:
 - JavaScript. At all. Don't even think about it
 - Authentication
 
-This project was to be completed in 4 days. I outlined my MVP and extensions in my trello board for this project at https://trello.com/b/GTS4zCY7/plantry
+This project was to be completed in 4 days. I outlined my MVP and extensions in my trello board for this project at https://trello.com/b/GTS4zCY7/plantry.
 
 ## Development
 This project used a full spectrum of UX tools such as proto personas, user needs, and user journeys. I also planned the database using an online tool. These documents can be seen in my Planning folder. I pretty much just followed my trello to build all the functionality using TDD. About 3 days was spent on the logic, and the fourth day was spent on the css and flexbox elements. My most proud bit of functionality is how a new recipe can be created. I wanted the user to select the ingredients that the recipe would use and then for the database relationship to be created behind the scenes. For my level at the time this was a difficult ask but I was very proud of the code that made it work.
