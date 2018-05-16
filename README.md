@@ -7,6 +7,7 @@ See it on my website at http://plantry.martabeveridge.uk
 
 ## Specification
 As this was a CodeClan project, I had to abide by the following rules:
+
 The project must be built using only:
 - Sinatra
 - PostGRES SQL
