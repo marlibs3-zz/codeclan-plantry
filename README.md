@@ -1,88 +1,25 @@
-# Programming & Web Fundamentals
+# plantry - ruby & sinatra website
 
-Over the next week you have the chance to consolidate and expand on everything you have learned:
+This was the Ruby project for the CodeClan programming course. I chose to make a website which can help you find cooking inspiration by taking in what is in your fridge and cupboard, and suggesting recipes. The look of the website is clean and simple; I wanted it to be very intuitive.  
 
-- Ruby fundamentals
-- TDD (where appropriate)
-- OOP
-- Web Programming ( REST/MVC )
-- Databases with CRUD actions
+## See it in action
+See it on my website at http://plantry.martabeveridge.uk
 
-## MoneyCashboard
+## Specification
+As this was a CodeClan project, I had to abide by the following rules:
+The project must be built using only:
+- Sinatra
+- PostGRES SQL
+- HTML / CSS
+- Ruby
+It must NOT use:
+- Any Object Relational Mapper (e.g. ActiveRecord)
+- JavaScript. At all. Don't even think about it
+- Authentication
+This project was to be completed in 4 days. I outlined my MVP and extensions in my trello board for this project at https://trello.com/b/GTS4zCY7/plantry
 
-You want to start tracking your spending in an attempt to be more frugal with money. You have decided to make a budgeting app to help you see where all of your money is being spent.
+## Development
+This project used a full spectrum of UX tools such as proto personas, user needs, and user journeys. I also planned the database using an online tool. These documents can be seen in my Planning folder. I pretty much just followed my trello to build all the functionality using TDD. About 3 days was spent on the logic, and the fourth day was spent on the css and flexbox elements. My most proud bit of functionality is how a new recipe can be created. I wanted the user to select the ingredients that the recipe would use and then for the database relationship to be created behind the scenes. For my level at the time this was a difficult ask but I was very proud of the code that made it work.
 
-You must be able to create new Transactions ( which should include a merchant name, e.g. Tesco, and a value ) which have an associated Tag (e.g. 'food', 'clothes'). Your app would then be able to track a total, and display this in a view.
-
-### MVP:
-
-- Create new transactions
-- Display a list of all transactions
-- Display total amount spent
-- Display total amount spent by tag
-
-### Possible Extensions:
-
-- CRUD actions for the transactions
-- Show a warning when the total expenditure is over budget (set a hard coded budget first)
-- Add a date to the transactions and view total spending by month
-- Any other ideas you might come up with
-
-## Animal Shelter
-
-The Scottish Animal Shelter accepts orphaned or stray animals and takes care of them until they can be adopted by a new owner. The shelter has a list of potential new owners for the animals. Animals may take a while to be trained up and made healthy before being available for adoption.
-
-They are looking for a management system to keep track of their animals and owners. 
-
-### MVP: 
-
- - A list of all their animals and their admission date
- - Mark an animal as being adoptable/not adoptable
- - Assign an animal to a new owner
- - List all the owners and their adopted animals
-
-### Possible Extensions:
-
- - CRUD actions for animals/owners
- - Have separate pages for animals ready for adoption and ones still in training/vet care
- - Search for animals by breed/type
- - Any other ideas you might come up with
-
-## Record Store
-
-The owner of a Record Store wants an app which will help to keep on top of the store inventory. This is not an app that customers will see, but will be used to check stock levels and see what needs to be ordered soon.
-
-You should be able to add stock, which would have an Artist and Album as well as the quantity available.
-
-### MVP:
-
-- Create albums with the quantity that are in stock
-- Create artists
-- Show an inventory page listing albums and artists
-- Show a stock level for the inventory items e.g. High/Medium/Low
-
-### Possible Extensions:
-
-- Add a buy and sell price to each stock item
-- Calculate the possible markup on items and show on inventory page
-- Add a genre to an Album
-- Any other ideas you might come up with
-
-## Burger Tracker
-
-Lucy has an insatiable hunger for burgers. However, she only has a limited budget, so prefers to go to places that have a deal on. She would like a way to track which deals are available at which places on a given day so that she can maximise her burger intake for minimum spending.
-
-### MVP:
-
-- Add a burger eatery
-- Add burgers available at an eatery and view them as a list
-- Add a list of deals for an eatery where a deal has
-  - Label string e.g. "Two For One Tuesdays"
-  - A list of burgers that deal applies to
-  - The day that the deal is available on e.g. "Wednesday"
-	
-### Possible Extensions:
-
-- Show the deals available by day of the week Mon - Sun
-- Add a price to a burger and add a savings amount/percentage to a deal so it's clear how much Lucy is saving
-- Any other ideas you might come up with
+## Learning points
+The first project always feels really special because it's something that has really been build from nothing. I think this website has a lot of potential - especially the idea behind it, which is something I have thought about for a long time. If I had more time I would develop this into a fully fledged product which would include things like: adding a database of recipes, being able to search by multiple ingredients, and being able to sort the result by those which require the fewest bought ingredients, among others.
