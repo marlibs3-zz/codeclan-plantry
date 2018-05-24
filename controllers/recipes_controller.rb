@@ -2,7 +2,6 @@ require("sinatra")
 require("sinatra/contrib/all")
 require_relative("../models/recipe.rb")
 require_relative("../models/ingredient.rb")
-require('pry')
 
 get '/recipes' do
   @title = "food"
